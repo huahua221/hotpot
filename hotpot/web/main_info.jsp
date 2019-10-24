@@ -15,7 +15,7 @@
     <link href="css/css.css" type="text/css" rel="stylesheet" />
     <link href="css/main.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/main/favicon.ico" />
-    <script src="https://cn.vuejs.org/js/vue.js"></script>
+    <%--<script src="https://cn.vuejs.org/js/vue.js"></script>--%>
     <script src="js/blue/js/jquery.min.js"></script>
     <script src="js/blue/js/modernizr.min.js"></script>
 
@@ -111,19 +111,19 @@
                     <th align="center" valign="middle" class="borderright">余额</th>
                     <th align="center" valign="middle">操作</th>
                 </tr>
-                <tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">
-                    <td align="center" valign="middle" class="borderright borderbottom">1</td>
-                    <td align="center" valign="middle" class="borderright borderbottom">01</td>
-                    <td align="center" valign="middle" class="borderright borderbottom">油条</td>
-                    <td align="center" valign="middle" class="borderright borderbottom">199383938393</td>
-                    <td align="center" valign="middle" class="borderright borderbottom">川大江岸</td>
-                    <td align="center" valign="middle" class="borderright borderbottom">1099</td>
-                    <td align="center" valign="middle" class="borderbottom">
-                        <button type="button" onFocus="this.blur()" class="delete_btn1" onclick="sendMsg()">提现</button>
-                        <span class="gray">&nbsp;|&nbsp;</span>
-                        <a href="cost_record.jsp" target="mainFrame" onFocus="this.blur()" class="add">查看消费记录</button>
-                    </td>
-                </tr>
+                <%--<tr onMouseOut="this.style.backgroundColor='#ffffff'" onMouseOver="this.style.backgroundColor='#edf5ff'">--%>
+                    <%--<td align="center" valign="middle" class="borderright borderbottom">1</td>--%>
+                    <%--<td align="center" valign="middle" class="borderright borderbottom">01</td>--%>
+                    <%--<td align="center" valign="middle" class="borderright borderbottom">油条</td>--%>
+                    <%--<td align="center" valign="middle" class="borderright borderbottom">199383938393</td>--%>
+                    <%--<td align="center" valign="middle" class="borderright borderbottom">川大江岸</td>--%>
+                    <%--<td align="center" valign="middle" class="borderright borderbottom">1099</td>--%>
+                    <%--<td align="center" valign="middle" class="borderbottom">--%>
+                        <%--<button type="button" onFocus="this.blur()" class="delete_btn1" onclick="sendMsg()">提现</button>--%>
+                        <%--<span class="gray">&nbsp;|&nbsp;</span>--%>
+                        <%--<a href="cost_record.jsp" target="mainFrame" onFocus="this.blur()" class="add">查看消费记录</button>--%>
+                    <%--</td>--%>
+                <%--</tr>--%>
             </table></td>
     </tr>
     <tr>
@@ -140,6 +140,27 @@
             console.log("否");
         }
     }
+
+    function loadFiles(){
+        $.ajax({
+            url:'http://125.64.17.163:4399/hotpot/billlist',
+            type:'GET',
+            processData: false,  // tell jQuery not to process the data
+            contentType: false,  // tell jQuery not to set contentType
+            dataType: 'JSON',
+            success: function (res) {
+                console.log(res);
+            },
+            error: function (err) {
+                // alert('error')
+                console.log(err)
+            }
+        })
+    }
+
+   $(function () {
+       loadFiles();
+   })
 
 </script>
 </body>

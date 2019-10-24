@@ -5,7 +5,7 @@
   <%--<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />--%>
   <title>hotpot</title>
   <%--<script src="https://cdn.bootcss.com/jquery/1.12.4/jquery.min.js"></script>--%>
-  <script src="https://cn.vuejs.org/js/vue.js"></script>
+  <%--<script src="https://cn.vuejs.org/js/vue.js"></script>--%>
   <script src="js/blue/js/jquery.min.js"></script>
   <script src="js/blue/js/modernizr.min.js"></script>
 

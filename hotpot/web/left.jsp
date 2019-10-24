@@ -21,7 +21,7 @@
         };
 
     </script>
-    <script src="https://cn.vuejs.org/js/vue.js"></script>
+    <%--<script src="https://cn.vuejs.org/js/vue.js"></script>--%>
     <script src="js/blue/js/jquery.min.js"></script>
     <script src="js/blue/js/modernizr.min.js"></script>
 
@@ -99,13 +99,13 @@
 </div>
 
 <script type="text/javascript">
-    var user = new Vue({
-        el: '#user',
-        data: {
-            roleid: 'root',
-            flag: false
-        }
-    })
+    // var user = new Vue({
+    //     el: '#user',
+    //     data: {
+    //         roleid: 'root',
+    //         flag: false
+    //     }
+    // })
 
     $(document).ready(function () {
     });

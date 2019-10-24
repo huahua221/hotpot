@@ -7,7 +7,7 @@
     <link href="css/css.css" type="text/css" rel="stylesheet" />
     <link href="css/main.css" type="text/css" rel="stylesheet" />
     <link rel="shortcut icon" href="img/main/favicon.ico" />
-    <script src="https://cn.vuejs.org/js/vue.js"></script>
+    <%--<script src="https://cn.vuejs.org/js/vue.js"></script>--%>
     <script src="js/blue/js/jquery.min.js"></script>
     <script src="js/blue/js/modernizr.min.js"></script>
 
